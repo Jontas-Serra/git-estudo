@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-language" content="pt-br" />
+        <title> </title>
+        <link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+</header>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	    	<a id="navTitle" class="navbar-brand" href="Index.html"></a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="form-inline">
+			<div class="form-group">
+				<input type="text" id="desc" class="form-control"  placeholder="Description"/>
+				<input type="text" id="amount" class="form-control"  placeholder="Amount"/>
+				<input type="text" id="value" class="form-control"  placeholder="Value"/>
+				<span id="btnUpdate" style="display: none;" >
+					<span id="inputUpdate"></span>
+					<button class="btn btn-default" onclick="UpdateData();">Save</button>
+					<button class="btn btn-default" onclick="resetForm();">Cancel</button>					
+				</span> 
+				<button id="bntAdd" class="btn btn-default" onclick="addData();">Add</button>
+			</div>
+		</div>
+		<div id="errors" style="display: none;" >
+		</div> 
+		<table id="listTable" class="table">
+		 
+		</table>		
+	</div>
+	<script src="Js/Config.js" type="text/javascript" charset="utf-8"> </script>
+	<script src="Js/Main.js" type="text/javascript" charset="utf-8"> </script>
+</body>
+</html>
